@@ -55,9 +55,9 @@ write_csv(wide_clean_data, "clean_wide_cake_data.csv")
 #Data with lots of obs where multiple ingredients
 multiple_ingr <- comb_data %>% 
   pivot_longer(cols = 4:21, names_to = "cakes",
-               values_to = "value") %>% 
-  pivot_wider("cakes", names_from = "cakes",
-              values_from =  "value") 
+               values_to = "value")
+
+write_csv(multiple_ingr, "clean_long_cake_data.csv")
 
 
 

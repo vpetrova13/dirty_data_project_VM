@@ -8,13 +8,18 @@ output: html_document
 
 ```{r}
 library(tidyverse)
+library(here)
 library(janitor)
 clean_data <- read_csv("~/dirty_data_project/task2/clean_data/clean_cake_data.csv")
-wide_data <- read_csv("~/dirty_data_project/task2/clean_wide_cake_data.csv")
+wide_data <- read_csv("~/dirty_data_project/task2/clean_data/clean_wide_cake_data.csv")
+long_data <- read_csv("~/dirty_data_project/task2/clean_data/clean_long_cake_data.csv")
+                      
 ```
+
 ```{r}
 head(clean_data)
 head(wide_data)
+head(long_data)
 ```
 ## There are a lot of NA as these ingredient were not used in cake, therefore, 
 they were left and further ignored in analysis.
@@ -31,7 +36,11 @@ wide_data %>%
   drop_na(cocoa_tablespoon) %>% 
   arrange(desc(cocoa_tablespoon)) %>% 
   head(1)
-  
+
+long_data %>% 
+  group_by(ingredient) %>% 
+  filter(ingredient == "cocoa") %>% 
+  slice_max(value)
 ```
 ###For sponge cake, how many cups of ingredients are used in total?
 ```{r}
@@ -46,6 +55,11 @@ wide_data %>%
   remove_empty("cols") %>% 
   select(matches("cup$")) %>% 
   ncol()
+
+long_data %>% 
+  filter(cakes == "sponge") %>% 
+  filter(measure == "cup") %>% 
+  summarise(count = n_distinct(value))
 ```
 ###How many ingredients are measured in teaspoons?
 ```{r}
@@ -56,26 +70,30 @@ clean_data %>%
 wide_data %>% 
   select(matches("teaspoon")) %>% 
   ncol()
+
+long_data %>% 
+  group_by(ingredient) %>% 
+  filter(measure == "teaspoon") %>% 
+  summarise(count = n_distinct(ingredient)) %>% 
+  count()
 ```
 ###Which cake has the most unique ingredients?
 ```{r}
-clean_data %>% 
-  select(-1:-3) %>% 
-  summarise_all(funs(n_distinct)) %>% 
-  which.max()
-  
-wide_data %>% 
-  mutate(total = count(unique(`almond essence_teaspoon`)))
+long_data %>% 
+  group_by(cakes) %>% 
+  drop_na() %>% 
+  summarise(count = n_distinct(ingredient)) %>% 
+  slice_max(count)
 ```
 
 ###Which ingredients are used only once?
 
 ```{r}
-clean_data %>% 
-  select(-1, -3)  %>% 
-  group_by(ingredient) 
-
-wide_data %>% 
+long_data %>% 
+  group_by(ingredient) %>% 
+  drop_na() %>% 
+  count(ingredient) %>% 
+  filter(n == 1)
 ```
 
 
