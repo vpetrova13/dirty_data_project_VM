@@ -1,0 +1,125 @@
+---
+title: "candy_data_analysis"
+author: "VM"
+date: "11/11/2020"
+output: html_document
+---
+
+##Load libraries and read the file
+
+```{r}
+library(tidyverse)
+full_candy_data <- read_csv("~/dirty_data_project/task4/clean_data/full_clean_candy_data.csv")
+```
+#What is the total number of candy ratings given across the three years. (number of candy ratings, not number of raters. Don’t count missing values)
+
+```{r}
+full_candy_data %>% 
+  select(year, comments)  %>% 
+  drop_na() %>% 
+  nrow()
+```
+```{r}
+full_candy_data %>% 
+  select(year, comments)  %>% 
+  filter(comments == c("despair", "joy", "meh")) %>% 
+  nrow()
+```
+#What was the average age of people who are going out trick or treating and the average age of people 3. not going trick or treating?
+```{r}
+full_candy_data %>% 
+  select(age, going_or_not) %>% 
+  filter(going_or_not == "yes") %>% 
+  summarise(avg_age_going = mean(age)) %>% 
+  round()
+
+full_candy_data %>% 
+  select(age, going_or_not) %>% 
+  filter(going_or_not == "no") %>% 
+  summarise(avg_age_not_going = mean(age)) %>% 
+  round()
+
+```
+#For each of joy, despair and meh, which candy bar revived the most of these ratings?
+```{r}
+frequency_candies <- full_candy_data %>% 
+  select(candies, comments) %>% 
+  filter(comments == c("despair", "joy", "meh")) %>% 
+  group_by(comments, candies) %>% 
+  count()
+
+frequency_candies %>% 
+  group_by(comments) %>% 
+  slice_max(order_by = n)
+
+```
+#How many people rated Starburst as despair?
+```{r}
+full_candy_data %>% 
+  filter(candies == "starburst") %>% 
+  filter(comments == "despair") %>% 
+  nrow()
+```
+#For the next three questions, count despair as -1, joy as +1 and meh as 0.
+```{r}
+rating_data <- full_candy_data  %>% 
+  filter(comments == c("despair", "joy", "meh")) %>% 
+  mutate(rating_count = case_when(
+    comments == "despair" ~ -1,
+    comments == "joy" ~ +1,
+    comments == "meh" ~ 0
+  ))
+
+rating_data
+```
+
+What was the most popular candy bar by this rating system for each gender in the dataset?
+```{r}
+rating_data %>% 
+  select(gender, candies, rating_count) %>% 
+  filter(gender == c("male", "female")) %>% 
+  group_by(gender,candies) %>% 
+  summarise(total = sum(rating_count)) %>% 
+  slice_max(total)
+  
+```
+
+#What was the most popular candy bar in each year?
+```{r}
+rating_data %>% 
+  select(year, rating_count, candies) %>% 
+  group_by(year, candies) %>% 
+  summarise(total = sum(rating_count)) %>% 
+  slice_max(total)
+```
+
+#What was the most popular candy bar by this rating for people in US, Canada, UK and all other countries?
+
+```{r}
+rating_data %>% 
+  select(country, candies, rating_count) %>% 
+  drop_na(country) %>%
+  group_by(country, candies) %>% 
+  summarise(total = sum(rating_count)) %>% 
+  slice_max(order_by = total, with_ties = FALSE)
+
+```
+```{r}
+rating_data %>% 
+  select(country, candies, rating_count) %>% 
+  mutate(country = case_when(
+    country == "uk" ~ "uk",
+    country == "usa" ~ "usa",
+    country == "canada" ~ "canada",
+    TRUE ~ "other" 
+  )) %>% 
+  group_by(country, candies) %>% 
+  summarise(total = sum(rating_count)) %>% 
+  slice_max(total)
+
+```
+
+
+
+
+
