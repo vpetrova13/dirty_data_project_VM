@@ -1,6 +1,7 @@
 # Load libraries
 library(tidyverse)
 library(janitor)
+library(assertr)
 # Read data
 cake_data <- read_csv("raw_data/cake/cake-ingredients-1961.csv") 
 # Explore raw data
@@ -58,6 +59,13 @@ multiple_ingr <- comb_data %>%
                values_to = "value")
 
 write_csv(multiple_ingr, "clean_long_cake_data.csv")
+
+#Check reproducibility by writing assertive programming
+multiple_ingr %>% 
+  verify(is.na(measure) | str_detect(measure, "[a-z]+")) %>% 
+  verify(is.na(cakes) | str_detect(cakes, "[a-z]+")) %>% 
+  verify(is.na(ingredient) | str_detect(ingredient, "[a-z]+"))
+
 
 
 

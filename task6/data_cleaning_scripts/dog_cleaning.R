@@ -1,5 +1,6 @@
 library(tidyverse)
 library(janitor)
+library(assertr)
 
 dog_raw <- read_csv("~/dirty_data_project/task6/raw_data/dog_survey.csv") %>% 
   clean_names()
@@ -98,4 +99,13 @@ glimpse(comb_data)
 
 #Write final clean data
 write_csv(comb_data, "clean_dog_data.csv")
+
+#Check reproducibility by writing assertive programming
+comb_data %>% 
+  verify(is.na(amount_spent_on_dog_food) | amount_spent_on_dog_food >= 0) %>% 
+  verify(is.na(dog_size) | str_detect(dog_size, "[A-Z]+")) %>% 
+  verify(is.na(dog_gender) | str_detect(dog_gender, "[A-Z]+")) %>% 
+  verify(is.na(dog_age) | dog_age >= 0)
+
+
 

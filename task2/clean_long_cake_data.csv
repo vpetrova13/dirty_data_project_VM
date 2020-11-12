@@ -1,0 +1,613 @@
+code,ingredient,measure,cakes,value
+ae,almond essence,teaspoon,angel,0.25
+ae,almond essence,teaspoon,babas_au_rhum,NA
+ae,almond essence,teaspoon,sweet_chocolate,NA
+ae,almond essence,teaspoon,buche_de_noel,NA
+ae,almond essence,teaspoon,cheesecake,NA
+ae,almond essence,teaspoon,rum_cheesecake,NA
+ae,almond essence,teaspoon,blender_cheesecake,NA
+ae,almond essence,teaspoon,one_bowl_chocolate,NA
+ae,almond essence,teaspoon,red_devils_food,NA
+ae,almond essence,teaspoon,sour_cream_fudge,NA
+ae,almond essence,teaspoon,hungarian_cream,1.5
+ae,almond essence,teaspoon,crumb_and_nut,NA
+ae,almond essence,teaspoon,spiced_pound,NA
+ae,almond essence,teaspoon,strawberry_roll,NA
+ae,almond essence,teaspoon,savarin,NA
+ae,almond essence,teaspoon,banana_shortcake,NA
+ae,almond essence,teaspoon,strawberry_shortcake,NA
+ae,almond essence,teaspoon,sponge,0.5
+bm,buttermilk,cup,angel,NA
+bm,buttermilk,cup,babas_au_rhum,NA
+bm,buttermilk,cup,sweet_chocolate,NA
+bm,buttermilk,cup,buche_de_noel,NA
+bm,buttermilk,cup,cheesecake,NA
+bm,buttermilk,cup,rum_cheesecake,NA
+bm,buttermilk,cup,blender_cheesecake,NA
+bm,buttermilk,cup,one_bowl_chocolate,NA
+bm,buttermilk,cup,red_devils_food,NA
+bm,buttermilk,cup,sour_cream_fudge,NA
+bm,buttermilk,cup,hungarian_cream,NA
+bm,buttermilk,cup,crumb_and_nut,NA
+bm,buttermilk,cup,spiced_pound,NA
+bm,buttermilk,cup,strawberry_roll,NA
+bm,buttermilk,cup,savarin,NA
+bm,buttermilk,cup,banana_shortcake,NA
+bm,buttermilk,cup,strawberry_shortcake,NA
+bm,buttermilk,cup,sponge,NA
+bp,baking powder,teaspoon,angel,NA
+bp,baking powder,teaspoon,babas_au_rhum,NA
+bp,baking powder,teaspoon,sweet_chocolate,NA
+bp,baking powder,teaspoon,buche_de_noel,NA
+bp,baking powder,teaspoon,cheesecake,NA
+bp,baking powder,teaspoon,rum_cheesecake,NA
+bp,baking powder,teaspoon,blender_cheesecake,NA
+bp,baking powder,teaspoon,one_bowl_chocolate,2
+bp,baking powder,teaspoon,red_devils_food,NA
+bp,baking powder,teaspoon,sour_cream_fudge,NA
+bp,baking powder,teaspoon,hungarian_cream,3
+bp,baking powder,teaspoon,crumb_and_nut,3
+bp,baking powder,teaspoon,spiced_pound,NA
+bp,baking powder,teaspoon,strawberry_roll,0.75
+bp,baking powder,teaspoon,savarin,NA
+bp,baking powder,teaspoon,banana_shortcake,4
+bp,baking powder,teaspoon,strawberry_shortcake,3
+bp,baking powder,teaspoon,sponge,1
+br,butter,cup,angel,NA
+br,butter,cup,babas_au_rhum,0.25
+br,butter,cup,sweet_chocolate,1
+br,butter,cup,buche_de_noel,NA
+br,butter,cup,cheesecake,0.25
+br,butter,cup,rum_cheesecake,NA
+br,butter,cup,blender_cheesecake,NA
+br,butter,cup,one_bowl_chocolate,NA
+br,butter,cup,red_devils_food,NA
+br,butter,cup,sour_cream_fudge,NA
+br,butter,cup,hungarian_cream,NA
+br,butter,cup,crumb_and_nut,NA
+br,butter,cup,spiced_pound,1
+br,butter,cup,strawberry_roll,NA
+br,butter,cup,savarin,0.7
+br,butter,cup,banana_shortcake,0.6
+br,butter,cup,strawberry_shortcake,0.12
+br,butter,cup,sponge,NA
+bs,bananas,one,angel,NA
+bs,bananas,one,babas_au_rhum,NA
+bs,bananas,one,sweet_chocolate,NA
+bs,bananas,one,buche_de_noel,NA
+bs,bananas,one,cheesecake,NA
+bs,bananas,one,rum_cheesecake,NA
+bs,bananas,one,blender_cheesecake,NA
+bs,bananas,one,one_bowl_chocolate,NA
+bs,bananas,one,red_devils_food,NA
+bs,bananas,one,sour_cream_fudge,NA
+bs,bananas,one,hungarian_cream,NA
+bs,bananas,one,crumb_and_nut,NA
+bs,bananas,one,spiced_pound,NA
+bs,bananas,one,strawberry_roll,NA
+bs,bananas,one,savarin,NA
+bs,bananas,one,banana_shortcake,3
+bs,bananas,one,strawberry_shortcake,NA
+bs,bananas,one,sponge,NA
+ca,cocoa,tablespoon,angel,NA
+ca,cocoa,tablespoon,babas_au_rhum,NA
+ca,cocoa,tablespoon,sweet_chocolate,NA
+ca,cocoa,tablespoon,buche_de_noel,NA
+ca,cocoa,tablespoon,cheesecake,NA
+ca,cocoa,tablespoon,rum_cheesecake,NA
+ca,cocoa,tablespoon,blender_cheesecake,NA
+ca,cocoa,tablespoon,one_bowl_chocolate,10
+ca,cocoa,tablespoon,red_devils_food,0.3
+ca,cocoa,tablespoon,sour_cream_fudge,NA
+ca,cocoa,tablespoon,hungarian_cream,NA
+ca,cocoa,tablespoon,crumb_and_nut,NA
+ca,cocoa,tablespoon,spiced_pound,NA
+ca,cocoa,tablespoon,strawberry_roll,NA
+ca,cocoa,tablespoon,savarin,NA
+ca,cocoa,tablespoon,banana_shortcake,NA
+ca,cocoa,tablespoon,strawberry_shortcake,NA
+ca,cocoa,tablespoon,sponge,NA
+cc,cottage cheese,pound,angel,NA
+cc,cottage cheese,pound,babas_au_rhum,NA
+cc,cottage cheese,pound,sweet_chocolate,NA
+cc,cottage cheese,pound,buche_de_noel,NA
+cc,cottage cheese,pound,cheesecake,1.5
+cc,cottage cheese,pound,rum_cheesecake,1.5
+cc,cottage cheese,pound,blender_cheesecake,0.5
+cc,cottage cheese,pound,one_bowl_chocolate,NA
+cc,cottage cheese,pound,red_devils_food,NA
+cc,cottage cheese,pound,sour_cream_fudge,NA
+cc,cottage cheese,pound,hungarian_cream,NA
+cc,cottage cheese,pound,crumb_and_nut,NA
+cc,cottage cheese,pound,spiced_pound,NA
+cc,cottage cheese,pound,strawberry_roll,0.5
+cc,cottage cheese,pound,savarin,NA
+cc,cottage cheese,pound,banana_shortcake,NA
+cc,cottage cheese,pound,strawberry_shortcake,0.2
+cc,cottage cheese,pound,sponge,NA
+ce,chocolate,ounce,angel,NA
+ce,chocolate,ounce,babas_au_rhum,NA
+ce,chocolate,ounce,sweet_chocolate,4
+ce,chocolate,ounce,buche_de_noel,NA
+ce,chocolate,ounce,cheesecake,NA
+ce,chocolate,ounce,rum_cheesecake,NA
+ce,chocolate,ounce,blender_cheesecake,NA
+ce,chocolate,ounce,one_bowl_chocolate,NA
+ce,chocolate,ounce,red_devils_food,NA
+ce,chocolate,ounce,sour_cream_fudge,3
+ce,chocolate,ounce,hungarian_cream,NA
+ce,chocolate,ounce,crumb_and_nut,NA
+ce,chocolate,ounce,spiced_pound,NA
+ce,chocolate,ounce,strawberry_roll,NA
+ce,chocolate,ounce,savarin,NA
+ce,chocolate,ounce,banana_shortcake,NA
+ce,chocolate,ounce,strawberry_shortcake,NA
+ce,chocolate,ounce,sponge,NA
+ci,crushed ice,cup,angel,NA
+ci,crushed ice,cup,babas_au_rhum,NA
+ci,crushed ice,cup,sweet_chocolate,NA
+ci,crushed ice,cup,buche_de_noel,NA
+ci,crushed ice,cup,cheesecake,NA
+ci,crushed ice,cup,rum_cheesecake,NA
+ci,crushed ice,cup,blender_cheesecake,1
+ci,crushed ice,cup,one_bowl_chocolate,NA
+ci,crushed ice,cup,red_devils_food,NA
+ci,crushed ice,cup,sour_cream_fudge,NA
+ci,crushed ice,cup,hungarian_cream,NA
+ci,crushed ice,cup,crumb_and_nut,NA
+ci,crushed ice,cup,spiced_pound,NA
+ci,crushed ice,cup,strawberry_roll,NA
+ci,crushed ice,cup,savarin,NA
+ci,crushed ice,cup,banana_shortcake,NA
+ci,crushed ice,cup,strawberry_shortcake,NA
+ci,crushed ice,cup,sponge,NA
+cs,crumbs,cup,angel,NA
+cs,crumbs,cup,babas_au_rhum,NA
+cs,crumbs,cup,sweet_chocolate,NA
+cs,crumbs,cup,buche_de_noel,NA
+cs,crumbs,cup,cheesecake,NA
+cs,crumbs,cup,rum_cheesecake,NA
+cs,crumbs,cup,blender_cheesecake,0.3
+cs,crumbs,cup,one_bowl_chocolate,NA
+cs,crumbs,cup,red_devils_food,NA
+cs,crumbs,cup,sour_cream_fudge,NA
+cs,crumbs,cup,hungarian_cream,NA
+cs,crumbs,cup,crumb_and_nut,3
+cs,crumbs,cup,spiced_pound,NA
+cs,crumbs,cup,strawberry_roll,NA
+cs,crumbs,cup,savarin,NA
+cs,crumbs,cup,banana_shortcake,NA
+cs,crumbs,cup,strawberry_shortcake,NA
+cs,crumbs,cup,sponge,NA
+ct,cream of tartar,teaspoon,angel,1.25
+ct,cream of tartar,teaspoon,babas_au_rhum,NA
+ct,cream of tartar,teaspoon,sweet_chocolate,NA
+ct,cream of tartar,teaspoon,buche_de_noel,NA
+ct,cream of tartar,teaspoon,cheesecake,NA
+ct,cream of tartar,teaspoon,rum_cheesecake,NA
+ct,cream of tartar,teaspoon,blender_cheesecake,NA
+ct,cream of tartar,teaspoon,one_bowl_chocolate,NA
+ct,cream of tartar,teaspoon,red_devils_food,NA
+ct,cream of tartar,teaspoon,sour_cream_fudge,NA
+ct,cream of tartar,teaspoon,hungarian_cream,NA
+ct,cream of tartar,teaspoon,crumb_and_nut,NA
+ct,cream of tartar,teaspoon,spiced_pound,NA
+ct,cream of tartar,teaspoon,strawberry_roll,NA
+ct,cream of tartar,teaspoon,savarin,NA
+ct,cream of tartar,teaspoon,banana_shortcake,NA
+ct,cream of tartar,teaspoon,strawberry_shortcake,NA
+ct,cream of tartar,teaspoon,sponge,NA
+dc,dried currants,tablespoon,angel,NA
+dc,dried currants,tablespoon,babas_au_rhum,3
+dc,dried currants,tablespoon,sweet_chocolate,NA
+dc,dried currants,tablespoon,buche_de_noel,NA
+dc,dried currants,tablespoon,cheesecake,NA
+dc,dried currants,tablespoon,rum_cheesecake,NA
+dc,dried currants,tablespoon,blender_cheesecake,NA
+dc,dried currants,tablespoon,one_bowl_chocolate,NA
+dc,dried currants,tablespoon,red_devils_food,NA
+dc,dried currants,tablespoon,sour_cream_fudge,NA
+dc,dried currants,tablespoon,hungarian_cream,NA
+dc,dried currants,tablespoon,crumb_and_nut,NA
+dc,dried currants,tablespoon,spiced_pound,NA
+dc,dried currants,tablespoon,strawberry_roll,NA
+dc,dried currants,tablespoon,savarin,NA
+dc,dried currants,tablespoon,banana_shortcake,NA
+dc,dried currants,tablespoon,strawberry_shortcake,NA
+dc,dried currants,tablespoon,sponge,NA
+eg,eggs,one,angel,NA
+eg,eggs,one,babas_au_rhum,1
+eg,eggs,one,sweet_chocolate,4
+eg,eggs,one,buche_de_noel,4
+eg,eggs,one,cheesecake,6
+eg,eggs,one,rum_cheesecake,2
+eg,eggs,one,blender_cheesecake,NA
+eg,eggs,one,one_bowl_chocolate,2
+eg,eggs,one,red_devils_food,2
+eg,eggs,one,sour_cream_fudge,2
+eg,eggs,one,hungarian_cream,3
+eg,eggs,one,crumb_and_nut,4
+eg,eggs,one,spiced_pound,5
+eg,eggs,one,strawberry_roll,4
+eg,eggs,one,savarin,3
+eg,eggs,one,banana_shortcake,NA
+eg,eggs,one,strawberry_shortcake,1
+eg,eggs,one,sponge,4
+ew,egg white,one,angel,10
+ew,egg white,one,babas_au_rhum,NA
+ew,egg white,one,sweet_chocolate,NA
+ew,egg white,one,buche_de_noel,NA
+ew,egg white,one,cheesecake,NA
+ew,egg white,one,rum_cheesecake,NA
+ew,egg white,one,blender_cheesecake,NA
+ew,egg white,one,one_bowl_chocolate,NA
+ew,egg white,one,red_devils_food,NA
+ew,egg white,one,sour_cream_fudge,NA
+ew,egg white,one,hungarian_cream,NA
+ew,egg white,one,crumb_and_nut,NA
+ew,egg white,one,spiced_pound,NA
+ew,egg white,one,strawberry_roll,NA
+ew,egg white,one,savarin,NA
+ew,egg white,one,banana_shortcake,NA
+ew,egg white,one,strawberry_shortcake,NA
+ew,egg white,one,sponge,NA
+ey,egg yolk,one,angel,NA
+ey,egg yolk,one,babas_au_rhum,2
+ey,egg yolk,one,sweet_chocolate,NA
+ey,egg yolk,one,buche_de_noel,NA
+ey,egg yolk,one,cheesecake,NA
+ey,egg yolk,one,rum_cheesecake,NA
+ey,egg yolk,one,blender_cheesecake,2
+ey,egg yolk,one,one_bowl_chocolate,NA
+ey,egg yolk,one,red_devils_food,NA
+ey,egg yolk,one,sour_cream_fudge,NA
+ey,egg yolk,one,hungarian_cream,NA
+ey,egg yolk,one,crumb_and_nut,NA
+ey,egg yolk,one,spiced_pound,NA
+ey,egg yolk,one,strawberry_roll,NA
+ey,egg yolk,one,savarin,NA
+ey,egg yolk,one,banana_shortcake,NA
+ey,egg yolk,one,strawberry_shortcake,NA
+ey,egg yolk,one,sponge,NA
+fr,sifted flour,cup,angel,1
+fr,sifted flour,cup,babas_au_rhum,1.75
+fr,sifted flour,cup,sweet_chocolate,2.5
+fr,sifted flour,cup,buche_de_noel,1
+fr,sifted flour,cup,cheesecake,0.25
+fr,sifted flour,cup,rum_cheesecake,NA
+fr,sifted flour,cup,blender_cheesecake,NA
+fr,sifted flour,cup,one_bowl_chocolate,2
+fr,sifted flour,cup,red_devils_food,1.75
+fr,sifted flour,cup,sour_cream_fudge,2
+fr,sifted flour,cup,hungarian_cream,3
+fr,sifted flour,cup,crumb_and_nut,NA
+fr,sifted flour,cup,spiced_pound,2
+fr,sifted flour,cup,strawberry_roll,0.75
+fr,sifted flour,cup,savarin,1.5
+fr,sifted flour,cup,banana_shortcake,3
+fr,sifted flour,cup,strawberry_shortcake,2
+fr,sifted flour,cup,sponge,0.75
+gn,gelatin,tablespoon,angel,NA
+gn,gelatin,tablespoon,babas_au_rhum,NA
+gn,gelatin,tablespoon,sweet_chocolate,NA
+gn,gelatin,tablespoon,buche_de_noel,NA
+gn,gelatin,tablespoon,cheesecake,NA
+gn,gelatin,tablespoon,rum_cheesecake,2
+gn,gelatin,tablespoon,blender_cheesecake,1
+gn,gelatin,tablespoon,one_bowl_chocolate,NA
+gn,gelatin,tablespoon,red_devils_food,NA
+gn,gelatin,tablespoon,sour_cream_fudge,NA
+gn,gelatin,tablespoon,hungarian_cream,NA
+gn,gelatin,tablespoon,crumb_and_nut,NA
+gn,gelatin,tablespoon,spiced_pound,NA
+gn,gelatin,tablespoon,strawberry_roll,NA
+gn,gelatin,tablespoon,savarin,NA
+gn,gelatin,tablespoon,banana_shortcake,NA
+gn,gelatin,tablespoon,strawberry_shortcake,NA
+gn,gelatin,tablespoon,sponge,NA
+hc,heavy cream,cup,angel,NA
+hc,heavy cream,cup,babas_au_rhum,NA
+hc,heavy cream,cup,sweet_chocolate,NA
+hc,heavy cream,cup,buche_de_noel,NA
+hc,heavy cream,cup,cheesecake,NA
+hc,heavy cream,cup,rum_cheesecake,1
+hc,heavy cream,cup,blender_cheesecake,NA
+hc,heavy cream,cup,one_bowl_chocolate,NA
+hc,heavy cream,cup,red_devils_food,NA
+hc,heavy cream,cup,sour_cream_fudge,NA
+hc,heavy cream,cup,hungarian_cream,2
+hc,heavy cream,cup,crumb_and_nut,NA
+hc,heavy cream,cup,spiced_pound,NA
+hc,heavy cream,cup,strawberry_roll,NA
+hc,heavy cream,cup,savarin,NA
+hc,heavy cream,cup,banana_shortcake,1
+hc,heavy cream,cup,strawberry_shortcake,NA
+hc,heavy cream,cup,sponge,NA
+lj,lemon juice,tablespoon,angel,NA
+lj,lemon juice,tablespoon,babas_au_rhum,NA
+lj,lemon juice,tablespoon,sweet_chocolate,NA
+lj,lemon juice,tablespoon,buche_de_noel,NA
+lj,lemon juice,tablespoon,cheesecake,1
+lj,lemon juice,tablespoon,rum_cheesecake,1
+lj,lemon juice,tablespoon,blender_cheesecake,1
+lj,lemon juice,tablespoon,one_bowl_chocolate,NA
+lj,lemon juice,tablespoon,red_devils_food,NA
+lj,lemon juice,tablespoon,sour_cream_fudge,NA
+lj,lemon juice,tablespoon,hungarian_cream,NA
+lj,lemon juice,tablespoon,crumb_and_nut,NA
+lj,lemon juice,tablespoon,spiced_pound,NA
+lj,lemon juice,tablespoon,strawberry_roll,NA
+lj,lemon juice,tablespoon,savarin,NA
+lj,lemon juice,tablespoon,banana_shortcake,NA
+lj,lemon juice,tablespoon,strawberry_shortcake,NA
+lj,lemon juice,tablespoon,sponge,NA
+lr,lemon rind,teaspoon,angel,NA
+lr,lemon rind,teaspoon,babas_au_rhum,0.5
+lr,lemon rind,teaspoon,sweet_chocolate,NA
+lr,lemon rind,teaspoon,buche_de_noel,NA
+lr,lemon rind,teaspoon,cheesecake,1
+lr,lemon rind,teaspoon,rum_cheesecake,1
+lr,lemon rind,teaspoon,blender_cheesecake,1
+lr,lemon rind,teaspoon,one_bowl_chocolate,NA
+lr,lemon rind,teaspoon,red_devils_food,NA
+lr,lemon rind,teaspoon,sour_cream_fudge,NA
+lr,lemon rind,teaspoon,hungarian_cream,NA
+lr,lemon rind,teaspoon,crumb_and_nut,NA
+lr,lemon rind,teaspoon,spiced_pound,NA
+lr,lemon rind,teaspoon,strawberry_roll,NA
+lr,lemon rind,teaspoon,savarin,1
+lr,lemon rind,teaspoon,banana_shortcake,NA
+lr,lemon rind,teaspoon,strawberry_shortcake,NA
+lr,lemon rind,teaspoon,sponge,NA
+mk,milk,cup,angel,NA
+mk,milk,cup,babas_au_rhum,0.25
+mk,milk,cup,sweet_chocolate,1
+mk,milk,cup,buche_de_noel,NA
+mk,milk,cup,cheesecake,NA
+mk,milk,cup,rum_cheesecake,1
+mk,milk,cup,blender_cheesecake,NA
+mk,milk,cup,one_bowl_chocolate,0.7
+mk,milk,cup,red_devils_food,1
+mk,milk,cup,sour_cream_fudge,NA
+mk,milk,cup,hungarian_cream,NA
+mk,milk,cup,crumb_and_nut,1
+mk,milk,cup,spiced_pound,NA
+mk,milk,cup,strawberry_roll,NA
+mk,milk,cup,savarin,0.25
+mk,milk,cup,banana_shortcake,1
+mk,milk,cup,strawberry_shortcake,0.5
+mk,milk,cup,sponge,NA
+ng,nutmeg,teaspoon,angel,NA
+ng,nutmeg,teaspoon,babas_au_rhum,NA
+ng,nutmeg,teaspoon,sweet_chocolate,NA
+ng,nutmeg,teaspoon,buche_de_noel,NA
+ng,nutmeg,teaspoon,cheesecake,NA
+ng,nutmeg,teaspoon,rum_cheesecake,NA
+ng,nutmeg,teaspoon,blender_cheesecake,NA
+ng,nutmeg,teaspoon,one_bowl_chocolate,NA
+ng,nutmeg,teaspoon,red_devils_food,NA
+ng,nutmeg,teaspoon,sour_cream_fudge,NA
+ng,nutmeg,teaspoon,hungarian_cream,NA
+ng,nutmeg,teaspoon,crumb_and_nut,NA
+ng,nutmeg,teaspoon,spiced_pound,1.5
+ng,nutmeg,teaspoon,strawberry_roll,NA
+ng,nutmeg,teaspoon,savarin,NA
+ng,nutmeg,teaspoon,banana_shortcake,NA
+ng,nutmeg,teaspoon,strawberry_shortcake,NA
+ng,nutmeg,teaspoon,sponge,NA
+ns,nuts,cup,angel,NA
+ns,nuts,cup,babas_au_rhum,NA
+ns,nuts,cup,sweet_chocolate,NA
+ns,nuts,cup,buche_de_noel,NA
+ns,nuts,cup,cheesecake,NA
+ns,nuts,cup,rum_cheesecake,NA
+ns,nuts,cup,blender_cheesecake,NA
+ns,nuts,cup,one_bowl_chocolate,NA
+ns,nuts,cup,red_devils_food,NA
+ns,nuts,cup,sour_cream_fudge,NA
+ns,nuts,cup,hungarian_cream,NA
+ns,nuts,cup,crumb_and_nut,1
+ns,nuts,cup,spiced_pound,NA
+ns,nuts,cup,strawberry_roll,NA
+ns,nuts,cup,savarin,NA
+ns,nuts,cup,banana_shortcake,NA
+ns,nuts,cup,strawberry_shortcake,NA
+ns,nuts,cup,sponge,NA
+rm,rum,ounce,angel,NA
+rm,rum,ounce,babas_au_rhum,2
+rm,rum,ounce,sweet_chocolate,NA
+rm,rum,ounce,buche_de_noel,NA
+rm,rum,ounce,cheesecake,NA
+rm,rum,ounce,rum_cheesecake,1
+rm,rum,ounce,blender_cheesecake,NA
+rm,rum,ounce,one_bowl_chocolate,NA
+rm,rum,ounce,red_devils_food,NA
+rm,rum,ounce,sour_cream_fudge,NA
+rm,rum,ounce,hungarian_cream,NA
+rm,rum,ounce,crumb_and_nut,NA
+rm,rum,ounce,spiced_pound,NA
+rm,rum,ounce,strawberry_roll,NA
+rm,rum,ounce,savarin,NA
+rm,rum,ounce,banana_shortcake,NA
+rm,rum,ounce,strawberry_shortcake,NA
+rm,rum,ounce,sponge,NA
+sa,soda,teaspoon,angel,NA
+sa,soda,teaspoon,babas_au_rhum,NA
+sa,soda,teaspoon,sweet_chocolate,1
+sa,soda,teaspoon,buche_de_noel,NA
+sa,soda,teaspoon,cheesecake,NA
+sa,soda,teaspoon,rum_cheesecake,NA
+sa,soda,teaspoon,blender_cheesecake,NA
+sa,soda,teaspoon,one_bowl_chocolate,0.5
+sa,soda,teaspoon,red_devils_food,1.25
+sa,soda,teaspoon,sour_cream_fudge,1
+sa,soda,teaspoon,hungarian_cream,NA
+sa,soda,teaspoon,crumb_and_nut,NA
+sa,soda,teaspoon,spiced_pound,NA
+sa,soda,teaspoon,strawberry_roll,NA
+sa,soda,teaspoon,savarin,NA
+sa,soda,teaspoon,banana_shortcake,NA
+sa,soda,teaspoon,strawberry_shortcake,NA
+sa,soda,teaspoon,sponge,NA
+sc,sour cream ,cup,angel,NA
+sc,sour cream ,cup,babas_au_rhum,NA
+sc,sour cream ,cup,sweet_chocolate,NA
+sc,sour cream ,cup,buche_de_noel,NA
+sc,sour cream ,cup,cheesecake,1
+sc,sour cream ,cup,rum_cheesecake,NA
+sc,sour cream ,cup,blender_cheesecake,1
+sc,sour cream ,cup,one_bowl_chocolate,NA
+sc,sour cream ,cup,red_devils_food,NA
+sc,sour cream ,cup,sour_cream_fudge,1
+sc,sour cream ,cup,hungarian_cream,NA
+sc,sour cream ,cup,crumb_and_nut,NA
+sc,sour cream ,cup,spiced_pound,NA
+sc,sour cream ,cup,strawberry_roll,NA
+sc,sour cream ,cup,savarin,NA
+sc,sour cream ,cup,banana_shortcake,NA
+sc,sour cream ,cup,strawberry_shortcake,1
+sc,sour cream ,cup,sponge,NA
+sg,shortening,tablespoon,angel,NA
+sg,shortening,tablespoon,babas_au_rhum,NA
+sg,shortening,tablespoon,sweet_chocolate,NA
+sg,shortening,tablespoon,buche_de_noel,NA
+sg,shortening,tablespoon,cheesecake,NA
+sg,shortening,tablespoon,rum_cheesecake,NA
+sg,shortening,tablespoon,blender_cheesecake,NA
+sg,shortening,tablespoon,one_bowl_chocolate,10
+sg,shortening,tablespoon,red_devils_food,0.5
+sg,shortening,tablespoon,sour_cream_fudge,0.3
+sg,shortening,tablespoon,hungarian_cream,NA
+sg,shortening,tablespoon,crumb_and_nut,1
+sg,shortening,tablespoon,spiced_pound,NA
+sg,shortening,tablespoon,strawberry_roll,NA
+sg,shortening,tablespoon,savarin,NA
+sg,shortening,tablespoon,banana_shortcake,NA
+sg,shortening,tablespoon,strawberry_shortcake,NA
+sg,shortening,tablespoon,sponge,NA
+sr,granulated sugar,cup,angel,1.5
+sr,granulated sugar,cup,babas_au_rhum,0.25
+sr,granulated sugar,cup,sweet_chocolate,2
+sr,granulated sugar,cup,buche_de_noel,1.3
+sr,granulated sugar,cup,cheesecake,1
+sr,granulated sugar,cup,rum_cheesecake,1
+sr,granulated sugar,cup,blender_cheesecake,NA
+sr,granulated sugar,cup,one_bowl_chocolate,1.5
+sr,granulated sugar,cup,red_devils_food,1.5
+sr,granulated sugar,cup,sour_cream_fudge,1.5
+sr,granulated sugar,cup,hungarian_cream,1.5
+sr,granulated sugar,cup,crumb_and_nut,1
+sr,granulated sugar,cup,spiced_pound,1.7
+sr,granulated sugar,cup,strawberry_roll,0.75
+sr,granulated sugar,cup,savarin,0.6
+sr,granulated sugar,cup,banana_shortcake,0.13
+sr,granulated sugar,cup,strawberry_shortcake,0.6
+sr,granulated sugar,cup,sponge,0.75
+ss,strawberries,quart,angel,NA
+ss,strawberries,quart,babas_au_rhum,NA
+ss,strawberries,quart,sweet_chocolate,NA
+ss,strawberries,quart,buche_de_noel,NA
+ss,strawberries,quart,cheesecake,NA
+ss,strawberries,quart,rum_cheesecake,NA
+ss,strawberries,quart,blender_cheesecake,NA
+ss,strawberries,quart,one_bowl_chocolate,NA
+ss,strawberries,quart,red_devils_food,NA
+ss,strawberries,quart,sour_cream_fudge,NA
+ss,strawberries,quart,hungarian_cream,NA
+ss,strawberries,quart,crumb_and_nut,NA
+ss,strawberries,quart,spiced_pound,NA
+ss,strawberries,quart,strawberry_roll,1
+ss,strawberries,quart,savarin,NA
+ss,strawberries,quart,banana_shortcake,NA
+ss,strawberries,quart,strawberry_shortcake,1
+ss,strawberries,quart,sponge,NA
+st,salt,teaspoon,angel,0.25
+st,salt,teaspoon,babas_au_rhum,NA
+st,salt,teaspoon,sweet_chocolate,0.5
+st,salt,teaspoon,buche_de_noel,0.5
+st,salt,teaspoon,cheesecake,0.25
+st,salt,teaspoon,rum_cheesecake,0.25
+st,salt,teaspoon,blender_cheesecake,NA
+st,salt,teaspoon,one_bowl_chocolate,0.25
+st,salt,teaspoon,red_devils_food,1
+st,salt,teaspoon,sour_cream_fudge,1
+st,salt,teaspoon,hungarian_cream,1
+st,salt,teaspoon,crumb_and_nut,NA
+st,salt,teaspoon,spiced_pound,0.5
+st,salt,teaspoon,strawberry_roll,1
+st,salt,teaspoon,savarin,0.5
+st,salt,teaspoon,banana_shortcake,0.5
+st,salt,teaspoon,strawberry_shortcake,0.75
+st,salt,teaspoon,sponge,0.25
+ve,vanilla extract,teaspoon,angel,1
+ve,vanilla extract,teaspoon,babas_au_rhum,NA
+ve,vanilla extract,teaspoon,sweet_chocolate,1
+ve,vanilla extract,teaspoon,buche_de_noel,1
+ve,vanilla extract,teaspoon,cheesecake,NA
+ve,vanilla extract,teaspoon,rum_cheesecake,NA
+ve,vanilla extract,teaspoon,blender_cheesecake,NA
+ve,vanilla extract,teaspoon,one_bowl_chocolate,1
+ve,vanilla extract,teaspoon,red_devils_food,1
+ve,vanilla extract,teaspoon,sour_cream_fudge,1
+ve,vanilla extract,teaspoon,hungarian_cream,2
+ve,vanilla extract,teaspoon,crumb_and_nut,2
+ve,vanilla extract,teaspoon,spiced_pound,NA
+ve,vanilla extract,teaspoon,strawberry_roll,1
+ve,vanilla extract,teaspoon,savarin,NA
+ve,vanilla extract,teaspoon,banana_shortcake,NA
+ve,vanilla extract,teaspoon,strawberry_shortcake,NA
+ve,vanilla extract,teaspoon,sponge,NA
+wr,water,cup,angel,NA
+wr,water,cup,babas_au_rhum,0.25
+wr,water,cup,sweet_chocolate,0.5
+wr,water,cup,buche_de_noel,NA
+wr,water,cup,cheesecake,NA
+wr,water,cup,rum_cheesecake,NA
+wr,water,cup,blender_cheesecake,0.5
+wr,water,cup,one_bowl_chocolate,0.5
+wr,water,cup,red_devils_food,NA
+wr,water,cup,sour_cream_fudge,0.25
+wr,water,cup,hungarian_cream,NA
+wr,water,cup,crumb_and_nut,NA
+wr,water,cup,spiced_pound,NA
+wr,water,cup,strawberry_roll,NA
+wr,water,cup,savarin,0.25
+wr,water,cup,banana_shortcake,NA
+wr,water,cup,strawberry_shortcake,NA
+wr,water,cup,sponge,2
+yt,yeast,ounce,angel,NA
+yt,yeast,ounce,babas_au_rhum,0.6
+yt,yeast,ounce,sweet_chocolate,NA
+yt,yeast,ounce,buche_de_noel,NA
+yt,yeast,ounce,cheesecake,NA
+yt,yeast,ounce,rum_cheesecake,NA
+yt,yeast,ounce,blender_cheesecake,NA
+yt,yeast,ounce,one_bowl_chocolate,NA
+yt,yeast,ounce,red_devils_food,NA
+yt,yeast,ounce,sour_cream_fudge,NA
+yt,yeast,ounce,hungarian_cream,NA
+yt,yeast,ounce,crumb_and_nut,NA
+yt,yeast,ounce,spiced_pound,NA
+yt,yeast,ounce,strawberry_roll,NA
+yt,yeast,ounce,savarin,1
+yt,yeast,ounce,banana_shortcake,NA
+yt,yeast,ounce,strawberry_shortcake,NA
+yt,yeast,ounce,sponge,NA
+zh,zwiebach,ounce,angel,NA
+zh,zwiebach,ounce,babas_au_rhum,NA
+zh,zwiebach,ounce,sweet_chocolate,NA
+zh,zwiebach,ounce,buche_de_noel,NA
+zh,zwiebach,ounce,cheesecake,6
+zh,zwiebach,ounce,rum_cheesecake,NA
+zh,zwiebach,ounce,blender_cheesecake,NA
+zh,zwiebach,ounce,one_bowl_chocolate,NA
+zh,zwiebach,ounce,red_devils_food,NA
+zh,zwiebach,ounce,sour_cream_fudge,NA
+zh,zwiebach,ounce,hungarian_cream,NA
+zh,zwiebach,ounce,crumb_and_nut,NA
+zh,zwiebach,ounce,spiced_pound,NA
+zh,zwiebach,ounce,strawberry_roll,NA
+zh,zwiebach,ounce,savarin,NA
+zh,zwiebach,ounce,banana_shortcake,NA
+zh,zwiebach,ounce,strawberry_shortcake,NA
+zh,zwiebach,ounce,sponge,NA

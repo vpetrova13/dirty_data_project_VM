@@ -3,6 +3,7 @@ library(tidyverse)
 library(janitor)
 library(readxl)
 library(plyr)
+library(assertr)
 
 candy_1 <- read_excel("raw_data/candy_ranking_data/boing-boing-candy-2015.xlsx") %>% clean_names()
 candy_2 <- read_excel("raw_data/candy_ranking_data/boing-boing-candy-2016.xlsx") %>% clean_names()
@@ -387,6 +388,12 @@ glimpse(full_candy_data)
 #Write clean data in csv format
 write_csv(full_candy_data, "full_clean_candy_data.csv")
 
+#Check reproducibility by writing assertive programming
+full_candy_data %>% 
+  verify(is.na(country) | str_detect(country, "[a-z]+")) %>% 
+  verify(is.na(going_or_not) | str_detect(going_or_not, "[a-z]+")) %>% 
+  verify(is.na(year) | str_detect(year, "[0-9]{4}")) %>% 
+  verify(is.na(age) | str_detect(age, "[0-9]+")) 
 
 
 
