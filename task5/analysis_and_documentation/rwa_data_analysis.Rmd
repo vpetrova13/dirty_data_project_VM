@@ -1,0 +1,75 @@
+---
+title: "rwa_data_analysis"
+author: "VM"
+date: "12/11/2020"
+output: html_document
+---
+
+#Load libraries and read data
+```{r}
+library(tidyverse) 
+rwa_data <- read_csv("~/dirty_data_project/task5/clean_data/clean_rwa_data.csv")
+```
+#What’s the average RWA score for each gender?
+```{r}
+rwa_data %>% 
+  select(q3:q22, gender) %>% 
+  drop_na(gender) %>% 
+  group_by(gender) %>% 
+  summarise(avg_rwa = mean(q3:q22, na.rm = TRUE))
+  
+```
+#What’s the average RWA score for left handed people vs. right handed people.
+```{r}
+rwa_data %>% 
+  select(q3:q22, hand) %>% 
+  drop_na(hand) %>% 
+  filter(hand != "both") %>% 
+  group_by(hand) %>% 
+  summarise(avg_rwa = mean(q3:q22, na.rm = TRUE))
+```
+#What’s the average family size for each type of childhood?
+```{r}
+rwa_data %>% 
+  select(familysize, urban) %>% 
+  drop_na(urban) %>% 
+  group_by(urban) %>% 
+  summarise(avg_family = mean(familysize, na.rm = TRUE))
+```
+#What’s the average time to take the test for each education level?
+```{r}
+time_education <- rwa_data %>% 
+  select(e3:e22, education) %>% 
+  drop_na(education) %>% 
+  group_by(education) %>% 
+  summarise(avg_time = mean(e3:e22, na.rm = TRUE))
+
+time_education
+```
+#Create a plot of results of question 4.
+```{r}
+ggplot() +
+  geom_col(data = time_education, aes(x = education, y = avg_time), colour = "black", 
+           fill="sky blue") +
+  labs(title = "Plot of average time spent on rwa over education level") +
+  theme_classic()
+```
+#What’s the average RWA score for people aged
+Under 18
+18 to 25
+26 to 40
+41 to 60
+Over 60
+```{r}
+rwa_data %>% 
+  mutate(age_categories = case_when(age < 18 ~ "under 18",
+                                    age >= 18 & age < 25 ~ "18 to 25",
+                                    age > 26 & age < 40 ~ "26 to 40",
+                                    age > 41 & age < 60 ~ "41 to 60",
+                                    age >= 60 ~ "over 60")) %>% 
+  select(age_categories, q3:q22) %>% 
+  drop_na(age_categories) %>% 
+  group_by(age_categories) %>% 
+  summarise(avg_rwa = mean(q3:q22, na.rm = TRUE))
+```
+

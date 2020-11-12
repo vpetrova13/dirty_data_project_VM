@@ -44,7 +44,7 @@ write_csv(comb_data, "clean_cake_data.csv")
 
 
 
-#Wide data format
+#Create wide data format
 wide_clean_data <- comb_data %>% 
   pivot_longer(cols = 4:21, names_to = "cakes",
                values_to = "value") %>% 
@@ -53,7 +53,7 @@ wide_clean_data <- comb_data %>%
 
 write_csv(wide_clean_data, "clean_wide_cake_data.csv")
 
-#Data with lots of obs where multiple ingredients
+#Data with lots of obs where multiple ingredients (long data format)
 multiple_ingr <- comb_data %>% 
   pivot_longer(cols = 4:21, names_to = "cakes",
                values_to = "value")

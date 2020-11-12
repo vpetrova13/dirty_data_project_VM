@@ -54,7 +54,7 @@ three_dogs <- three_dogs %>%
 three_dogs <- distinct(three_dogs)
 
 
-#Combine all data and delete unneded rows
+#Combine all data and delete unneeded rows (with multiple dogs)
 comb_data <- rbind(dog_data, two_dogs, three_dogs)
 
 comb_data <- comb_data[-c(174),]

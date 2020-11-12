@@ -29,6 +29,7 @@ ship_data <- seabird_raw_ship %>%
 # Join data
 seabird_full_data <- left_join(seabird_data, ship_data, by = "record_id")
 
+#Remove more columns which are not needed for further analysis
 seabird_full_data <- seabird_full_data %>% 
   select(-sex, -date, -time, -obs, -csmeth, -age)
 

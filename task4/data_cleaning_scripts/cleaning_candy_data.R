@@ -196,7 +196,7 @@ candy_3 <- candy_3 %>%
   mutate(candies = str_remove_all(candies, "q[0-9]+\\_"))
 
 ## Recode observations in data
-# Change US
+# Recode country column
 candy_3 <- candy_3 %>% 
   mutate(country = recode(country,
                           "united state" = "usa",
@@ -383,6 +383,7 @@ full_candy_data <- rbind.fill(comb_candy_data, candy_1)
 full_candy_data <- full_candy_data %>% 
   mutate(year = as.numeric(year))
 
+#Last check before writing a clean data
 glimpse(full_candy_data)
 
 #Write clean data in csv format
