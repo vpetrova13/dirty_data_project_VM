@@ -1,0 +1,69 @@
+---
+title: "seabird_data_analysis"
+author: "VM"
+date: "12/11/2020"
+output: html_document
+---
+
+#Load libraries and read data
+```{r}
+library(tidyverse)
+seabird_data <- read_csv("~/dirty_data_project/task3/clean_data/seabird_clean_data.csv")
+```
+
+#Which bird had the most individual sightings?
+```{r}
+seabird_data %>% 
+  group_by(species_common_name_taxon_age_sex_plumage_phase, species_scientific_name_taxon_age_sex_plumage_phase, species_abbreviation) %>% 
+  count() %>% 
+  arrange(desc(n)) 
+  
+```
+#Which bird had the highest total count?
+```{r}
+seabird_data %>% 
+  select(species_common_name_taxon_age_sex_plumage_phase,
+         species_scientific_name_taxon_age_sex_plumage_phase,
+        species_abbreviation, count) %>% 
+  group_by(species_common_name_taxon_age_sex_plumage_phase) %>% 
+  summarise(total = sum(count, na.rm = TRUE)) %>% 
+  slice_max(total)
+```
+#Which bird had the highest total count above a latitude of -30?
+```{r}
+seabird_data %>% 
+  select(species_common_name_taxon_age_sex_plumage_phase,
+         species_scientific_name_taxon_age_sex_plumage_phase,
+        species_abbreviation, count, lat) %>% 
+  filter(lat >= -30) %>% 
+  group_by(species_common_name_taxon_age_sex_plumage_phase) %>% 
+  summarise(total = sum(count, na.rm = TRUE)) %>% 
+  slice_max(total)
+```
+#How many different types of birds were only ever seen in groups of 1?
+```{r}
+seabird_data %>% 
+  select(species_common_name_taxon_age_sex_plumage_phase,
+         species_scientific_name_taxon_age_sex_plumage_phase,
+        species_abbreviation, count) %>% 
+  filter(count == 1) %>% 
+  group_by(species_common_name_taxon_age_sex_plumage_phase) %>% 
+  count() %>% 
+  nrow()
+  
+```
+#How many penguins were seen? (Hint: there are many types of penguin)
+```{r}
+seabird_data %>% 
+  select(species_common_name_taxon_age_sex_plumage_phase,
+         species_scientific_name_taxon_age_sex_plumage_phase,
+        species_abbreviation, count) %>% 
+  mutate(penguin = str_detect(species_common_name_taxon_age_sex_plumage_phase, "[Pp]enguin")) %>% 
+  mutate(penguin_count = case_when(
+    penguin == TRUE ~ 1,
+    penguin == FALSE ~ 0
+  )) %>%  mutate(total_peng = count* penguin_count) %>% 
+  summarise(total = sum(total_peng, na.rm = TRUE))
+
+```
+
