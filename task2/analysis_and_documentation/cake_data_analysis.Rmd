@@ -2,9 +2,18 @@
 title: "cake_data_analysis"
 author: "VM"
 date: "09/11/2020"
-output: html_document
+output: 
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_float: yes
 ---
-#Read data first and load libraries
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Read data first and load libraries
 
 ```{r}
 library(tidyverse)
@@ -21,10 +30,11 @@ head(clean_data)
 head(wide_data)
 head(long_data)
 ```
-## There are a lot of NA as these ingredient were not used in cake, therefore, 
+There are a lot of NA as these ingredient were not used in cake, therefore, 
 they were left and further ignored in analysis.
 
-###Which cake has the most cocoa in it?
+# Q1
+## Which cake has the most cocoa in it?
 
 ```{r}
 clean_data %>% 
@@ -42,7 +52,8 @@ long_data %>%
   filter(ingredient == "cocoa") %>% 
   slice_max(value)
 ```
-###For sponge cake, how many cups of ingredients are used in total?
+# Q2
+## For sponge cake, how many cups of ingredients are used in total?
 ```{r}
 clean_data %>% 
   select(measure, ingredient, sponge) %>% 
@@ -61,7 +72,8 @@ long_data %>%
   filter(measure == "cup") %>% 
   summarise(count = n_distinct(value))
 ```
-###How many ingredients are measured in teaspoons?
+# Q3
+## How many ingredients are measured in teaspoons?
 ```{r}
 clean_data %>% 
   filter(measure == "teaspoon") %>% 
@@ -77,7 +89,8 @@ long_data %>%
   summarise(count = n_distinct(ingredient)) %>% 
   count()
 ```
-###Which cake has the most unique ingredients?
+# Q4
+## Which cake has the most unique ingredients?
 ```{r}
 long_data %>% 
   group_by(cakes) %>% 
@@ -86,7 +99,8 @@ long_data %>%
   slice_max(count)
 ```
 
-###Which ingredients are used only once?
+# Q5 
+## Which ingredients are used only once?
 
 ```{r}
 long_data %>% 

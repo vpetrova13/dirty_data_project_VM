@@ -2,43 +2,56 @@
 title: "decathlon_data_analysis"
 author: "VM"
 date: "12/11/2020"
-output: html_document
+output: 
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_float: yes
 ---
 
-#Load libraries and data
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load libraries and data
 ```{r}
 library(tidyverse)
 decathlon_data <- read_csv("~/dirty_data_project/task1/clean_data/decathlon_clean_data.csv")
 ```
-#Who had the longest long jump seen in the data?
+# Q1
+## Who had the longest long jump seen in the data?
 ```{r}
 decathlon_data %>% 
   select(names, long_jump, rank) %>% 
   slice_max(long_jump, n = 3)
 
 ```
-#What was the average 100m time in each competition?
+# Q2
+## What was the average 100m time in each competition?
 ```{r}
 decathlon_data %>% 
   select(run_100m, competition) %>% 
   group_by(competition) %>% 
   summarise(avg_run100m = mean(run_100m))
 ```
-#Who had the highest total points across both competitions?
+# Q3
+## Who had the highest total points across both competitions?
 ```{r}
 decathlon_data %>% 
   select(names, points, competition) %>% 
   group_by(competition) %>% 
   slice_max(points)
 ```
-#What was the shot-put scores for the top three competitors in each competition?
+# Q4
+## What was the shot-put scores for the top three competitors in each competition?
 ```{r}
 decathlon_data %>% 
   select(shot_put, competition) %>% 
   group_by(competition) %>% 
   slice_max(shot_put, n = 3)
 ```
-#What was the average points for competitors who ran the 400m in less than 50 seconds vs. those than ran 400m in more than 50 seconds?
+# Q5
+## What was the average points for competitors who ran the 400m in less than 50 seconds vs. those than ran 400m in more than 50 seconds?
 ```{r}
 decathlon_data %>% 
   select(points, run_400m) %>% 
