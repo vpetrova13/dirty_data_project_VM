@@ -1,7 +1,7 @@
 # Dirty Data project
 ## Introduction
 As part of Data Analysis course at CodeClan, I was asked to do at least 2 tasks out of 6 for the dirty data project (task 4 was mandatory). The aim of the project was to practice **data cleaning** skills since it is known that 
-> 80% of time in data science and analysis is spent data cleaning.
+> 80% of time in data science and analysis is spent on data cleaning.
 
 ## Project structure
 All the project was made in Rstudio.
